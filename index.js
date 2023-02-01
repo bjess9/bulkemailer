@@ -14,7 +14,7 @@ async function sendEmail(email, balance) {
   };
 
   try {
-    // await sgMail.send(msg);
+    await sgMail.send(msg);
     console.log(`Email sent to ${email}`);
   } catch (error) {
     console.error(`Error sending email to ${email}:`, error);
@@ -22,7 +22,6 @@ async function sendEmail(email, balance) {
 }
 
 function main() {
-  // ask the user if they want to send an email to all patients
   inquirer
     .prompt([
       {
@@ -39,12 +38,11 @@ function main() {
         return;
       }
 
-      // read the CSV file and send an email to each patient with their balance
       fs.createReadStream('test.csv')
         .pipe(csvParser())
         .on('data', async (data) => {
           const email = data['patient.emailaddress'];
-          const balance = data.balance;
+          const balance = data['patient.balance'];
 
           await sendEmail(email, balance);
         })
