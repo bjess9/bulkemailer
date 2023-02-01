@@ -1,0 +1,25 @@
+{
+  "name": "bulk-emailer",
+  "type": "module",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bjess9/bulkemailer.git"
+  },
+  "author": "Jesse Drummond",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bjess9/bulkemailer/issues"
+  },
+  "homepage": "https://github.com/bjess9/bulkemailer#readme",
+  "dependencies": {
+    "@sendgrid/mail": "^7.7.0",
+    "csv-parser": "^3.0.0",
+    "inquirer": "^9.1.4"
+  }
+}

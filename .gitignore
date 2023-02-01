@@ -1,0 +1,34 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Dependency directories
+node_modules/
+
+# Build artifacts
+dist/
+build/
+
+# Config files
+.env
+.env.*
+
+# Output of 'npm pack'
+*.tgz
+
+# Editor directories and files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# npm-debug.log* file
+npm-debug.log*
+
+# package-lock.json file
+package-lock.json
